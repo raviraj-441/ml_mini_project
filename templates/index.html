@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Disease Prediction</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Multiple Disease Prediction</h1>
+    </header>
+    <main>
+        <form action="/predict" method="POST">
+            <label for="Glucose">Glucose:</label>
+            <input type="text" id="glucose" name="Glucose" required>
+
+            <label for="Cholesterol">Cholesterol:</label>
+            <input type="text" id="cholesterol" name="Cholesterol" required>
+
+            <label for="Hemoglobin">Hemoglobin:</label>
+            <input type="text" id="hemoglobin" name="Hemoglobin" required>
+
+            <label for="Platelets">Platelets (10^9/L):</label>
+            <input type="text" id="Platelets" name="Platelets" required><br><br>
+
+            <label for="White Blood Cells">White Blood Cells (10^9/L):</label>
+            <input type="text" id="WhiteBloodCells" name="White Blood Cells" required><br><br>
+
+            <label for="RedBloodCells">Red Blood Cells (10^12/L):</label>
+            <input type="text" id="RedBloodCells" name="Red Blood Cells" required><br><br>
+
+            <label for="Hematocrit">Hematocrit (%):</label>
+            <input type="text" id="Hematocrit" name="Hematocrit" required><br><br>
+
+            <label for="Mean Corpuscular Volume">Mean Corpuscular Volume (fL):</label>
+            <input type="text" id="MeanCorpuscularVolume" name="Mean Corpuscular Volume" required><br><br>
+
+            <label for="Mean Corpuscular Hemoglobin">Mean Corpuscular Hemoglobin (pg):</label>
+            <input type="text" id="MeanCorpuscularHemoglobin" name="Mean Corpuscular Hemoglobin" required><br><br>
+
+            <label for="Mean Corpuscular Hemoglobin Concentration">Mean Corpuscular Hemoglobin Concentration (%):</label>
+            <input type="text" id="MeanCorpuscularHemoglobinConcentration" name="Mean Corpuscular Hemoglobin Concentration"
+                required><br><br>
+
+            <label for="Insulin">Insulin (μU/mL):</label>
+            <input type="text" id="Insulin" name="Insulin" required><br><br>
+
+            <label for="BMI">BMI:</label>
+            <input type="text" id="BMI" name="BMI" required><br><br>
+
+            <label for="Systolic Blood Pressure">Systolic Blood Pressure (mmHg):</label>
+            <input type="text" id="SystolicBloodPressure" name="Systolic Blood Pressure" required><br><br>
+
+            <label for="Diastolic Blood Pressure">Diastolic Blood Pressure (mmHg):</label>
+            <input type="text" id="DiastolicBloodPressure" name="Diastolic Blood Pressure" required><br><br>
+
+            <label for="Triglycerides">Triglycerides (mg/dL):</label>
+            <input type="text" id="Triglycerides" name="Triglycerides" required><br><br>
+
+            <label for="HbA1c">HbA1c (%):</label>
+            <input type="text" id="HbA1c" name="HbA1c" required><br><br>
+
+            <label for="LDL Cholesterol">LDL Cholesterol (mg/dL):</label>
+            <input type="text" id="LDLCholesterol" name="LDL Cholesterol" required><br><br>
+
+            <label for="HDL Cholesterol">HDL Cholesterol (mg/dL):</label>
+            <input type="text" id="HDLCholesterol" name="HDL Cholesterol" required><br><br>
+
+            <label for="ALT">ALT (U/L):</label>
+            <input type="text" id="ALT" name="ALT" required><br><br>
+
+            <label for="AST">AST (U/L):</label>
+            <input type="text" id="AST" name="AST" required><br><br>
+
+            <label for="Heart Rate">Heart Rate (bpm):</label>
+            <input type="text" id="HeartRate" name="Heart Rate" required><br><br>
+
+            <label for="Creatinine">Creatinine (mg/dL):</label>
+            <input type="text" id="Creatinine" name="Creatinine" required><br><br>
+
+            <label for="Troponin">Troponin (ng/mL):</label>
+            <input type="text" id="Troponin" name="Troponin" required><br><br>
+
+            <label for="C-reactive Protein">C-reactive Protein (mg/L):</label>
+            <input type="text" id="C-reactive-Protein" name="C-reactive Protein" required><br><br>
+
+            <button type="submit">Predict</button>
+        </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
